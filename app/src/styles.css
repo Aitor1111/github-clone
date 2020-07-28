@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.nav {
+  padding-top: 4em;
+  display: flex;
+  margin-left: 26%;
+}
+.nav__item {
+  padding: 0.5em;
+  padding-bottom: 0.8em;
+  padding-left: 1.2em;
+  text-decoration: none;
+  color: dimgray;
+}
+.nav__item--active {
+  color: black;
+  border-bottom: 2px solid tomato;
+  font-weight: 600;
+}
+.nav__count {
+  margin-left: 0.3em;
+  font-size: 0.7em;
+  background: lightgrey;
+  padding: 0.2em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  border-radius: 1em;
+}
+
+.hr__nav {
+  border: 0;
+  border-bottom: 1px solid lightgray;
+}
+.hr__repos {
+  border: 0;
+  margin-top: 1em;
+  border-bottom: 1px solid lightgray;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+}
+
+.repos {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 1em;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.search {
+  display: flex;
+}
+.search__input {
+  width: 100%;
+  padding: 0.6em;
+  padding-left: 0.8em;
+  font-weight: 500;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-right: 0.6em;
+}
+
+.button {
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background: #fafbfc;
+  font-weight: 500;
+  color: dimgray;
+  margin-left: 0.6em;
+}
+.button--large {
+  justify-content: center;
+  margin-left: 0;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  width: 100%;
+}
+.button__text-highlight {
+  color: black;
+  margin-left: 0.3em;
+}
+
+.repo {
+  margin-top: 1.7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.repo__container {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  width: 70%;
+}
+.repo__title {
+  font-size: 1.3em;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+  color: #2866ce;
+}
+.repo__description {
+  margin-bottom: 1.5em;
+  font-weight: 400;
+  width: 100%;
+  color: dimgray;
+}
+.repo__info-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+  margin-bottom: 0.7em;
+}
+.repo__light-text {
+  display: flex;
+  margin-right: 2em;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: dimgray;
+}
+.repo__button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+}
+
+.lang-icon {
+  background: gold;
+  height: 1em;
+  width: 1em;
+  margin-right: 0.35em;
+  border-radius: 50%;
+}
+
+.profile {
+  width: 20%;
+  margin-left: 3%;
+  position: relative;
+  top: -2em;
+  text-align: left;
+}
+.profile__avatar {
+  border-radius: 50%;
+  width: 100%;
+}
+.profile__name {
+  margin-top: 0.7em;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+.profile__subname {
+  margin-top: 0.2em;
+  font-weight: 400;
+  color: dimgray;
+}
+.profile__company {
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+  font-weight: 500;
+  color: #1c1c1c;
+}
+.profile__status {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+  font-weight: 500;
+  color: #1c1c1c;
+}
+
+/*# sourceMappingURL=styles.css.map */
