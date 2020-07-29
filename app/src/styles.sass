@@ -60,6 +60,7 @@ body
 
 .search
     display: flex
+
     &__input
         width: 100%
         padding: 0.6em
@@ -68,6 +69,10 @@ body
         border: 1px solid lightgray
         border-radius: 5px
         margin-right: 0.6em
+
+        &--large
+            width: 80%
+            font-size: 1em
 
 .button
     font-weight: 800
@@ -93,6 +98,14 @@ body
         padding-top: 0.6em
         padding-bottom: 0.6em
         width: 100%
+
+    &--huge
+        width: 40%
+        justify-content: center
+        font-size: 1em
+        margin-top: 1em
+        padding-top: 0.5em
+        padding-bottom: 0.5em
 
     &__text-highlight
         color: black
@@ -182,3 +195,32 @@ body
         margin-bottom: 0.7em
         font-weight: 500
         color: #1c1c1c
+
+.user-input
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &__container
+        background-color: rgb(250, 251, 252)
+        box-shadow: 1em 1em rgb(197, 197, 197)
+        border-radius: 2.5em
+        padding: 3em
+        width: 40%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__logo
+        width: 15em
+        height: 15em
+        margin-bottom: 1em
+
+    &__title
+        text-align: center
+        font-size: 2em
+        font-weight: bold
+        margin-bottom: 1em
