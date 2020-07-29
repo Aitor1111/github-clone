@@ -1,7 +1,7 @@
-module.exports = function () {
+module.exports = function (user, query) {
     return (async () => {
         try {
-            const url = 'https://api.github.com/users/Aitor1111/repos'
+            const url = `https://api.github.com/users/${user}/repos`
             const method = 'GET'
             const headers = undefined
             const body = undefined

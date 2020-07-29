@@ -1,4 +1,5 @@
 module.exports = {
     retrieveUser: require('./retrieve-user'),
-    retrieveRepos: require('./retrieve-repos')
+    retrieveRepos: require('./retrieve-repos'),
+    searchRepos: require('./search-repos'),
 }

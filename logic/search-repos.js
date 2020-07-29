@@ -1,7 +1,7 @@
-module.exports = function (user) {
+module.exports = function (user, query) {
     return (async () => {
         try {
-            const url = `https://api.github.com/users/${user}`
+            const url = `https://api.github.com/search/repositories?q=${query}+user:${user}`
             const method = 'GET'
             const headers = undefined
             const body = undefined
@@ -16,6 +16,7 @@ module.exports = function (user) {
                 throw new Error(error)
             }
         } catch (error) {
+            console.log(error)
             throw new Error(error.message)
         }
     })()

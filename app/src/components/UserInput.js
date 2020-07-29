@@ -22,7 +22,7 @@ export const UserInput = ({ onSubmit }) => {
                     type="text" name="search"
                     placeholder="Find a github profile... (ex: Aitor1111)"
                 />
-                <button className="button button--huge" onSubmit={() => onSubmit(query)}>Find</button>
+                <button className="button button--huge" onClick={() => onSubmit(query)}>Find</button>
             </div>
         </section>
     );
