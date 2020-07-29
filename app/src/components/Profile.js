@@ -1,16 +1,17 @@
 import React from 'react'
+import { PeopleIcon } from '@primer/octicons-react'
 
-export const Profile = () => {
+export const Profile = ({ user }) => {
     return (
         <section className="profile">
-            <img className="profile__avatar" src="https://avatars0.githubusercontent.com/u/59667946?v=4" alt="" srcSet />
-            <div className="profile__name">Aitor1111</div>
-            <div className="profile__subname">Aitor Truji</div>
-            <div className="profile__company">React Fullstack Developer</div>
+            <img className="profile__avatar" src={`${user.avatar_url}`} alt="" />
+            <div className="profile__name">{user.login}</div>
+            <div className="profile__subname">{user.name}</div>
+            <div className="profile__company">{user.bio}</div>
             <button className="button button--large">
                 Follow
           </button>
-            <div className="profile__status">17 followers · 45 following · $ 24</div>
+            <div className="profile__status"><PeopleIcon size={16} /> {user.followers} followers · {user.following} following</div>
         </section>
     );
 }

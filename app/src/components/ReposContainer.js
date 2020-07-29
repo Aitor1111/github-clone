@@ -2,12 +2,12 @@ import React from 'react'
 import { Search } from './Search'
 import { Repo } from './Repo'
 
-export const ReposContainer = () => {
+export const ReposContainer = ({ repos }) => {
     return (
         <section className='repos' >
             <Search />
-            <hr class="hr__repos" />
-            <Repo />
+            <hr className="hr__repos" />
+            {repos.map(repo => <Repo repo={repo} />)}
         </section>
     )
 }
