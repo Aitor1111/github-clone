@@ -11,7 +11,7 @@ export const Profile = ({ user }) => {
             <button className="button button--large">
                 Follow
           </button>
-            <div className="profile__status"><PeopleIcon size={16} /> {user.followers} followers · {user.following} following</div>
+            <div className="profile__status"><PeopleIcon size={16} verticalAlign={'middle'} /> {user.followers} followers · {user.following} following</div>
         </section>
     );
 }

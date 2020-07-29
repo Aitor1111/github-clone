@@ -48,9 +48,9 @@ export const Repo = ({ repo }) => {
                     </div>
                 </div>
                 <div className="repo__button-container">
-                    <button className="button">
-                        <StarIcon size={16} /> Star
-              </button>
+                    <button className="button button--small">
+                        <StarIcon size={16} /><span>Star</span>
+                    </button>
                 </div>
             </section>
             <hr className="hr__repos" />

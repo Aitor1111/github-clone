@@ -87,6 +87,11 @@ body {
   color: dimgray;
   margin-left: 0.6em;
 }
+.button--small {
+  padding: 0.4em;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+}
 .button--large {
   justify-content: center;
   margin-left: 0;
