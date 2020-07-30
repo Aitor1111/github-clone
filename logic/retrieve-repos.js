@@ -8,6 +8,8 @@
  * @throws {Error} If cannot find the user repos, or other unexpected errors.
  */
 
+const fetch = require("node-fetch");
+
 module.exports = function (user) {
     return (async () => {
         try {

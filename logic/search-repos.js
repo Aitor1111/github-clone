@@ -8,6 +8,7 @@
  * 
  * @throws {Error} If cannot find the user, or other unexpected errors.
  */
+const fetch = require("node-fetch");
 
 module.exports = function (user, query) {
     return (async () => {
