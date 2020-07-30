@@ -1,4 +1,14 @@
-module.exports = function (user, query) {
+/**
+ * Retrieves user repositories.
+ * 
+ * @param {string} user The user repos to retrieve. 
+ * 
+ * @returns {Promise<String>} The user repositories if it resolves, an error if it rejects.
+ * 
+ * @throws {Error} If cannot find the user repos, or other unexpected errors.
+ */
+
+module.exports = function (user) {
     return (async () => {
         try {
             const url = `https://api.github.com/users/${user}/repos`

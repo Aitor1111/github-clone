@@ -1,3 +1,14 @@
+/**
+ * Retrieves user repositories filtered by name query.
+ * 
+ * @param {string} user The user repos to retrieve. 
+ * @param {string} query The filter to retrieve, finding matches by name. 
+ * 
+ * @returns {Promise<String>} The user repositories filtered if it resolves, an error if it rejects.
+ * 
+ * @throws {Error} If cannot find the user, or other unexpected errors.
+ */
+
 module.exports = function (user, query) {
     return (async () => {
         try {

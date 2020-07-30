@@ -1,3 +1,13 @@
+/**
+ * Retrieves a user profile by name.
+ * 
+ * @param {string} user The username to retrieve. 
+ * 
+ * @returns {Promise<String>} The user profile data if it resolves, an error if it rejects.
+ * 
+ * @throws {Error} If cannot find the user, or other unexpected errors.
+ */
+
 module.exports = function (user) {
     return (async () => {
         try {
