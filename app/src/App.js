@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { NavBar } from './components/NavBar';
@@ -15,11 +15,15 @@ function App() {
   const [repos, setRepos] = useState([])
 
   const handleOnSubmit = async (user) => {
-    const _user = await retrieveUser(user)
-    setUser(_user)
-    const _repos = await retrieveRepos(user)
-    setRepos(_repos)
-    setView('home')
+    try {
+      const _user = await retrieveUser(user)
+      setUser(_user)
+      const _repos = await retrieveRepos(user)
+      setRepos(_repos)
+      setView('home')
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   const handleOnSearch = async (e) => {

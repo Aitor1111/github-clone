@@ -7,7 +7,6 @@ export const UserInput = ({ onSubmit }) => {
 
     const handleOnChange = (e) => {
         const { value } = e.target
-        console.log(value)
         setQuery(value)
     }
 
