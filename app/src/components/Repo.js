@@ -36,9 +36,8 @@ export const Repo = ({ repo }) => {
                 <div className="repo__container">
                     <a href={`${repo.html_url}`} className="repo__title">{repo.name}</a>
                     <div className="repo__description">
-                        A declarative, efficient, and flexible JavaScript library for
-                        building user interfaces.
-              </div>
+                        {repo.description}
+                    </div>
                     <div className="repo__info-container">
                         {repo.language && <div className="repo__light-text">
                             <span className="lang-icon" />
