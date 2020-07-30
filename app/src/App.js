@@ -13,6 +13,7 @@ function App() {
   const [view, setView] = useState('landing')
   const [user, setUser] = useState({})
   const [repos, setRepos] = useState([])
+  const [error, setError] = useState('')
 
   const handleOnSubmit = async (user) => {
     try {
@@ -22,8 +23,9 @@ function App() {
       setRepos(_repos)
       setView('home')
     } catch (error) {
-      console.log(error)
+      setError(`Ouch, it seems that '${user}' hasn't GitHub yet.`)
     }
+
   }
 
   const handleOnSearch = async (e) => {
@@ -37,13 +39,13 @@ function App() {
         setRepos(_repos)
       }
     } catch (error) {
-      console.log(error)
+      setError(`Hmm, ${query} is not a ${user.login}'s repo`)
     }
   }
 
   return (<>
-    {view === 'landing' && <UserInput onSubmit={handleOnSubmit} />}
-    {view === 'home' && user && repos && <Home user={user} repos={repos} onSearch={handleOnSearch} />}
+    {view === 'landing' && <UserInput onSubmit={handleOnSubmit} error={error} />}
+    {view === 'home' && user && repos && <Home user={user} repos={repos} onSearch={handleOnSearch} error={error} />}
   </>);
 }
 

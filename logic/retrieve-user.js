@@ -11,7 +11,7 @@
 const fetch = require("node-fetch");
 
 module.exports = function (user) {
-    debugger
+
     return (async () => {
         try {
             const url = `https://api.github.com/users/${user}`

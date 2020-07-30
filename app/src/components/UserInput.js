@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Search } from './Search'
 
 
-export const UserInput = ({ onSubmit }) => {
+export const UserInput = ({ onSubmit, error }) => {
     const [query, setQuery] = useState('')
 
     const handleOnChange = (e) => {
@@ -21,6 +21,7 @@ export const UserInput = ({ onSubmit }) => {
                     type="text" name="search"
                     placeholder="Find a github profile... (ex: Aitor1111)"
                 />
+                {error && <div>{error}</div>}
                 <button className="button button--huge" onClick={() => onSubmit(query)}>Find</button>
             </div>
         </section>
